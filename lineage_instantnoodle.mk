@@ -29,3 +29,19 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=OnePlus8 \
     SystemDevice=OnePlus8 \
     SystemName=OnePlus8
+
+# RisingOS Flags
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
+TARGET_PREBUILT_GOOGLE_CAMERA := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+
+# Inherit RisingOS configurations.
+RISING_MAINTAINER = Lord Itachi
+
+# Add Official Stuff
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Qualcomm Snapdragon 865" \
+    RisingMaintainer="Lord Itachi"
